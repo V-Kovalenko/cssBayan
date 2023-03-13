@@ -20,7 +20,9 @@ input {
     background-color: #b6acac;
     max-width: 500px;
     margin: 20px auto;
+    padding: 10px   ;
 }
+
 
 /*-------------------------------*/
 .accordion_title {
