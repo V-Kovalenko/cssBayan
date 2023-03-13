@@ -93,7 +93,7 @@ input {
 .accordion_content{
     display: flex;
     justify-content: center;
-    transition: .5s ease-in-out;
+    transition: .6s ease-in-out;
     opacity: 0;
     height: 0;
     overflow: hidden;
