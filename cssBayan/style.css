@@ -5,7 +5,7 @@
 }
 
 img {
-    max-width: 500px;
+    max-width: 400px;
 }
 
 input {
@@ -29,15 +29,12 @@ input {
     padding: 10px 0 0 0;
 }
 
-/* start accordion item-1 */
-.accordion_image-1 {
-    display: none;
-}
+/* start accordion_item-1 */
 
 .accordion_item-1 {
     border: 1px solid black;
 }
-
+/* стили заголовка лэйбла -> */
 .accordion_label-title {
     box-sizing: border-box;
     position: relative;
@@ -48,7 +45,8 @@ input {
     line-height: 32px;
     color: #8340b7;
 }
-
+/* стили заголовка лэйбла <- */
+/* hover на заголовок лэйбла начало*/
 .accordion_label-title:hover {
     color: #3e0077;
     background-color: #c9b035;
@@ -56,24 +54,18 @@ input {
     line-height: 34px;
     transition: background .5s ease-in-out;
 }
+/* hover на заголовок лэйбла конец*/
 
+/* изменение стилей заголовка лэйбла при нажатии -> */
 .accordion_input-1:checked ~ .accordion_label-title {
     color: #3e0077;
     background-color: #c9b035;
     font-size: 24px;
     line-height: 34px;
 }
+/* изменение стилей заголовка лэйбла при нажатии <- */
 
-.accordion_input-1:checked ~ .accordion_image-1 {
-    display: block;
-    /*transition: all 5s;*/
-}
-
-.accordion_input-1:hover ~ .accordion_image-1 {
-    display: block;
-    /*transition: all 5s;*/
-
-}
+/* стрелка при нажатии закрыта старт*/
 .accordion_span-vue1 {
     position: absolute;
     border-style: solid;
@@ -83,12 +75,60 @@ input {
     top: 50%;
     right: 15px;
 }
+/* стрелка при нажатии закрыта конец*/
 
+/* стрелка при нажатии открыта старт*/
 .accordion_input-1:checked ~ .accordion_label-title .accordion_span-vue1 {
     border-style: solid;
     border-width: 0 5px 8px 5px;
     border-color: transparent transparent black transparent;
 }
+/* стрелка при нажатии открыта конец*/
+.accordion_label-title .accordion_span-vue1:hover {
+    border-style: solid;
+    border-width: 0 5px 8px 5px;
+    border-color: transparent transparent black transparent;
+}
+/* стили для контента ->*/
+.accordion_content{
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+
+}
+/* стили для контента ->*/
+
+/* style for img -> */
+.accordion_image-1 {
+    margin: 15px;
+}
+/* style for img -> */
+
+/* при клике картинка плавно появляется* -> */
+.accordion_input-1:checked ~ .accordion_content {
+    height: 300px;
+    opacity: 1;
+}
+/* при клике картинка плавно появляется* <-  */
+
+/* при наведении картинка плавно появляется* -> */
+.accordion_label-title:hover ~ .accordion_content {
+    height: 300px;
+    opacity: 1;
+}
+/* при наведении картинка плавно появляется* <-  */
+
+
+/* при на ведении на инпут стрелка меняет положение на открыто -> */
+.accordion_input-1:hover ~ .accordion_label-title .accordion_span-vue1 {
+    border-style: solid;
+    border-width: 0 5px 8px 5px;
+    border-color: transparent transparent black transparent;
+}
+/* при на ведении на инпут стрелка меняет положение на открыто <- */
 
 /* end accordion item-1 */
 
