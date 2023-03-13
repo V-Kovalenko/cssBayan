@@ -33,6 +33,7 @@ input {
 
 .accordion_item-1 {
     border: 1px solid black;
+    margin: 20px
 }
 /* стили заголовка лэйбла -> */
 .accordion_label-title {
@@ -44,6 +45,7 @@ input {
     font-size: 22px;
     line-height: 32px;
     color: #8340b7;
+    background-color: #e8e559;
 }
 /* стили заголовка лэйбла <- */
 /* hover на заголовок лэйбла начало*/
