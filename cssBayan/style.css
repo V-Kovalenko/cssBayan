@@ -133,6 +133,62 @@ input {
 /* при на ведении на инпут стрелка меняет положение на открыто <- */
 
 /* end accordion item-1 */
+
+@media screen and (min-width: 800px){
+    img {
+        max-width: 80%;
+        max-height: 80%;
+        margin: 5%;
+    }
+    .accordion_title {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0 0 0;
+        font-size: 36px;
+        line-height: 42px;
+
+
+    }
+    .accordion_label-title {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        cursor: pointer;
+        padding: 5px 5px;
+        font-size: 28px;
+        line-height: 36px;
+        color: #8340b7;
+        background-color: #e8e559;
+    }
+    .accordion_label-title:hover {
+        color: #3e0077;
+        background-color: #c9b035;
+        font-size: 32px;
+        line-height: 40px;
+        transition: background .5s ease-in-out;
+    }
+
+    .accordion_input-1:checked ~ .accordion_label-title {
+        color: #3e0077;
+        background-color: #c9b035;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .accordion_item-1 {
+        border: 1px solid black;
+        margin: 5px
+    }
+
+    .accordion_input-1:checked ~ .accordion_content {
+        height: max-content;
+        max-width: max-content;
+        opacity: 1;
+    }
+
+}
+
+
 @media screen and (max-width: 524px){
     img {
         max-width: 80%;
